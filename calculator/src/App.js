@@ -22,7 +22,7 @@ function App() {
 
   }
 
-    var regInteger = /^-?\d+$/;
+    var regInteger = /^[-+]?[0-9]*[.,]?[0-9]+(?:[eE][-+]?[0-9]+)?$/ // дробные и целые числа
 
     function isInteger( str ) {
         return regInteger.test( str );
